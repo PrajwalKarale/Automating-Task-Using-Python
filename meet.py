@@ -7,14 +7,14 @@ browser.maximize_window()
 
 email = browser.find_element_by_name("identifier")
 email.clear()
-email.send_keys("")
+email.send_keys("enter your gmail id")
 
 # browser.find_element_by_xpath("//*[@id='identifierNext']/div/button/div[2]").click()
 browser.implicitly_wait(60)
 
 browser.find_element_by_id('identifierNext').click()
 
-password = browser.find_element_by_name("password").send_keys("")
+password = browser.find_element_by_name("password").send_keys("enter your password of gmail")
 
 browser.find_element_by_id('passwordNext').click()
 
